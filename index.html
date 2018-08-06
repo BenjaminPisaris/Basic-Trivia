@@ -6,8 +6,10 @@
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/timeTo.css">
     <script src="assets/scripts/game.js"></script>
-    <script src="assets/scripts/timeto.js"></script>
+    <script src="assets/scripts/jquery.time-to.js"></script>
+   
     <title>Trivia Game</title>
 </head>
 
@@ -15,8 +17,10 @@
     <div class="container">
         <div class="jumbotron text-center">
             <h1 class="display-1">Trivia Game</h2>
-                <p id="timer">You have
-                    <span id="time">-</span> seconds remaining to finish the quiz!</p>
+                <p id="timer">
+                    Time Remaining:
+                    <div id="time">-</div>
+                </p>
                 <p>Your score is:
                     <span id="score">-</span>
                 </p>
@@ -37,7 +41,7 @@
             <h5 class="card-header">2. Who was the last queen of France prior to the French Revolution?</h5>
             <div class="card-body">
                 <form>
-                    <input type="radio" value="correct" name="group2">  Queen Marie Antoinette
+                    <input type="radio" value="correct" name="group2"> Queen Marie Antoinette
                     <br>
                     <input type="radio" value="wrong" name="group2"> Queen Margaret of Provence
                     <br>
@@ -49,7 +53,7 @@
             <h5 class="card-header">3. Which US state was the first to drill an oil well?</h5>
             <div class="card-body">
                 <form>
-                    <input type="radio" value="wrong" name="group3">  Ohio
+                    <input type="radio" value="wrong" name="group3"> Ohio
                     <br>
                     <input type="radio" value="wrong" name="group3"> Florida
                     <br>
@@ -58,7 +62,7 @@
             </div>
         </div>
     </div>
-    
+
 
 </body>
 
